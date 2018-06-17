@@ -1,0 +1,312 @@
+---- value_type Matches (312 in 28 files) ----
+Bastring.h (std):  typedef typename traits::char_type	value_type;
+Defalloc.h:    typedef T value_type;
+Iterator.h:using __STD::value_type;
+Stl_algo.h:  return __unique_copy(first, last, result, value_type(first));
+Stl_algo.h:  return __unique_copy(first, last, result, binary_pred, value_type(first));
+Stl_algo.h:                   value_type(first));
+Stl_algo.h:                                  value_type(first), distance_type(first));
+Stl_algo.h:    __linear_insert(first, i, value_type(first));
+Stl_algo.h:    __linear_insert(first, i, value_type(first), comp);
+Stl_algo.h:  __unguarded_insertion_sort_aux(first, last, value_type(first));
+Stl_algo.h:  __unguarded_insertion_sort_aux(first, last, value_type(first), comp);
+Stl_algo.h:    __introsort_loop(cut, last, value_type(first), depth_limit);
+Stl_algo.h:    __introsort_loop(cut, last, value_type(first), depth_limit, comp);
+Stl_algo.h:    __introsort_loop(first, last, value_type(first), __lg(last - first) * 2);
+Stl_algo.h:    __introsort_loop(first, last, value_type(first), __lg(last - first) * 2,
+Stl_algo.h:  __stable_sort_aux(first, last, value_type(first), distance_type(first));
+Stl_algo.h:  __stable_sort_aux(first, last, value_type(first), distance_type(first), 
+Stl_algo.h:  __partial_sort(first, middle, last, value_type(first));
+Stl_algo.h:  __partial_sort(first, middle, last, value_type(first), comp);
+Stl_algo.h:                             distance_type(result_first), value_type(first));
+Stl_algo.h:                             distance_type(result_first), value_type(first));
+Stl_algo.h:  __nth_element(first, nth, last, value_type(first));
+Stl_algo.h:  __nth_element(first, nth, last, value_type(first), comp);
+Stl_algo.h:  __inplace_merge_aux(first, middle, last, value_type(first),
+Stl_algo.h:  __inplace_merge_aux(first, middle, last, value_type(first),
+Stl_algobase.h:  __iter_swap(a, b, value_type(a));
+Stl_bvector.h:  typedef bool value_type;
+Stl_bvector.h:  typedef reverse_iterator<const_iterator, value_type, const_reference, 
+Stl_bvector.h:  typedef reverse_iterator<iterator, value_type, reference, difference_type>
+Stl_construct.h:  __destroy(first, last, value_type(first));
+Stl_deque.h:  typedef T value_type;
+Stl_deque.h:inline T* value_type(const __deque_iterator<T, Ref, Ptr, BufSiz>&) {
+Stl_deque.h:inline T* value_type(const __deque_iterator<T, Ref, Ptr>&) { return 0; }
+Stl_deque.h:  typedef T value_type;
+Stl_deque.h:  typedef value_type* pointer;
+Stl_deque.h:  typedef const value_type* const_pointer;
+Stl_deque.h:  typedef value_type& reference;
+Stl_deque.h:  typedef const value_type& const_reference;
+Stl_deque.h:  typedef reverse_iterator<const_iterator, value_type, const_reference, 
+Stl_deque.h:  typedef reverse_iterator<iterator, value_type, reference, difference_type>
+Stl_deque.h:  typedef simple_alloc<value_type, Alloc> data_allocator;
+Stl_deque.h:    return __deque_buf_size(BufSiz, sizeof(value_type));
+Stl_deque.h:  deque(size_type n, const value_type& value)
+Stl_deque.h:  deque(int n, const value_type& value)
+Stl_deque.h:  deque(long n, const value_type& value)
+Stl_deque.h:    fill_initialize(n, value_type());
+Stl_deque.h:  deque(const value_type* first, const value_type* last)
+Stl_deque.h:  void push_back(const value_type& t) {
+Stl_deque.h:  void push_front(const value_type& t) {
+Stl_deque.h:  iterator insert(iterator position, const value_type& x) {
+Stl_deque.h:  iterator insert(iterator position) { return insert(position, value_type()); }
+Stl_deque.h:  void insert(iterator pos, size_type n, const value_type& x); 
+Stl_deque.h:  void insert(iterator pos, int n, const value_type& x) {
+Stl_deque.h:  void insert(iterator pos, long n, const value_type& x) {
+Stl_deque.h:  void insert(iterator pos, const value_type* first, const value_type* last);
+Stl_deque.h:  void resize(size_type new_size, const value_type& x) {
+Stl_deque.h:  void resize(size_type new_size) { resize(new_size, value_type()); }
+Stl_deque.h:  void fill_initialize(size_type n, const value_type& value);
+Stl_deque.h:  void push_back_aux(const value_type& t);
+Stl_deque.h:  void push_front_aux(const value_type& t);
+Stl_deque.h:  iterator insert_aux(iterator pos, const value_type& x);
+Stl_deque.h:  void insert_aux(iterator pos, size_type n, const value_type& x);
+Stl_deque.h:                  const value_type* first, const value_type* last,
+Stl_deque.h:                                      size_type n, const value_type& x) {
+Stl_deque.h:                                      const value_type* first,
+Stl_deque.h:                                      const value_type* last) {
+Stl_deque.h:                                               const value_type& value) {
+Stl_deque.h:void deque<T, Alloc, BufSize>::push_back_aux(const value_type& t) {
+Stl_deque.h:  value_type t_copy = t;
+Stl_deque.h:void deque<T, Alloc, BufSize>::push_front_aux(const value_type& t) {
+Stl_deque.h:  value_type t_copy = t;
+Stl_deque.h:deque<T, Alloc, BufSize>::insert_aux(iterator pos, const value_type& x) {
+Stl_deque.h:  value_type x_copy = x;
+Stl_deque.h:                                          size_type n, const value_type& x) {
+Stl_deque.h:  value_type x_copy = x;
+Stl_deque.h:                                          const value_type* first,
+Stl_deque.h:                                          const value_type* last,
+Stl_deque.h:        const value_type* mid = first + (difference_type(n) - elems_before);
+Stl_deque.h:        const value_type* mid = first + elems_after;
+Stl_hashtable.h:  typedef Value value_type;
+Stl_hashtable.h:  typedef Value value_type;
+Stl_hashtable.h:  typedef Value value_type;
+Stl_hashtable.h:  typedef value_type*       pointer;
+Stl_hashtable.h:  typedef const value_type* const_pointer;
+Stl_hashtable.h:  typedef value_type&       reference;
+Stl_hashtable.h:  typedef const value_type& const_reference;
+Stl_hashtable.h:  pair<iterator, bool> insert_unique(const value_type& obj)
+Stl_hashtable.h:  iterator insert_equal(const value_type& obj)
+Stl_hashtable.h:  pair<iterator, bool> insert_unique_noresize(const value_type& obj);
+Stl_hashtable.h:  iterator insert_equal_noresize(const value_type& obj);
+Stl_hashtable.h:  void insert_unique(const value_type* f, const value_type* l)
+Stl_hashtable.h:  void insert_equal(const value_type* f, const value_type* l)
+Stl_hashtable.h:  reference find_or_insert(const value_type& obj);
+Stl_hashtable.h:  size_type bkt_num(const value_type& obj) const
+Stl_hashtable.h:  size_type bkt_num(const value_type& obj, size_t n) const
+Stl_hashtable.h:  node* new_node(const value_type& obj)
+Stl_hashtable.h:inline V* value_type(const __hashtable_iterator<V, K, HF, ExK, EqK, All>&)
+Stl_hashtable.h:value_type(const __hashtable_const_iterator<V, K, HF, ExK, EqK, All>&)
+Stl_hashtable.h:hashtable<V, K, HF, Ex, Eq, A>::insert_unique_noresize(const value_type& obj)
+Stl_hashtable.h:hashtable<V, K, HF, Ex, Eq, A>::insert_equal_noresize(const value_type& obj)
+Stl_hashtable.h:hashtable<V, K, HF, Ex, Eq, A>::find_or_insert(const value_type& obj)
+Stl_hash_map.h:  typedef typename ht::value_type value_type;
+Stl_hash_map.h:  hash_map(const value_type* f, const value_type* l)
+Stl_hash_map.h:  hash_map(const value_type* f, const value_type* l, size_type n)
+Stl_hash_map.h:  hash_map(const value_type* f, const value_type* l, size_type n,
+Stl_hash_map.h:  hash_map(const value_type* f, const value_type* l, size_type n,
+Stl_hash_map.h:  pair<iterator, bool> insert(const value_type& obj)
+Stl_hash_map.h:  void insert(const value_type* f, const value_type* l) {
+Stl_hash_map.h:  pair<iterator, bool> insert_noresize(const value_type& obj)
+Stl_hash_map.h:    return rep.find_or_insert(value_type(key, T())).second;
+Stl_hash_map.h:  typedef typename ht::value_type value_type;
+Stl_hash_map.h:  hash_multimap(const value_type* f, const value_type* l)
+Stl_hash_map.h:  hash_multimap(const value_type* f, const value_type* l, size_type n)
+Stl_hash_map.h:  hash_multimap(const value_type* f, const value_type* l, size_type n,
+Stl_hash_map.h:  hash_multimap(const value_type* f, const value_type* l, size_type n,
+Stl_hash_map.h:  iterator insert(const value_type& obj) { return rep.insert_equal(obj); }
+Stl_hash_map.h:  void insert(const value_type* f, const value_type* l) {
+Stl_hash_map.h:  iterator insert_noresize(const value_type& obj)
+Stl_hash_set.h:  typedef typename ht::value_type value_type;
+Stl_hash_set.h:  hash_set(const value_type* f, const value_type* l)
+Stl_hash_set.h:  hash_set(const value_type* f, const value_type* l, size_type n)
+Stl_hash_set.h:  hash_set(const value_type* f, const value_type* l, size_type n,
+Stl_hash_set.h:  hash_set(const value_type* f, const value_type* l, size_type n,
+Stl_hash_set.h:  pair<iterator, bool> insert(const value_type& obj)
+Stl_hash_set.h:  void insert(const value_type* f, const value_type* l) {
+Stl_hash_set.h:  pair<iterator, bool> insert_noresize(const value_type& obj)
+Stl_hash_set.h:  typedef typename ht::value_type value_type;
+Stl_hash_set.h:  hash_multiset(const value_type* f, const value_type* l)
+Stl_hash_set.h:  hash_multiset(const value_type* f, const value_type* l, size_type n)
+Stl_hash_set.h:  hash_multiset(const value_type* f, const value_type* l, size_type n,
+Stl_hash_set.h:  hash_multiset(const value_type* f, const value_type* l, size_type n,
+Stl_hash_set.h:  iterator insert(const value_type& obj) { return rep.insert_equal(obj); }
+Stl_hash_set.h:  void insert(const value_type* f, const value_type* l) {
+Stl_hash_set.h:  iterator insert_noresize(const value_type& obj)
+Stl_heap.h:  __push_heap_aux(first, last, distance_type(first), value_type(first));
+Stl_heap.h:  __push_heap_aux(first, last, comp, distance_type(first), value_type(first));
+Stl_heap.h:  __pop_heap_aux(first, last, value_type(first));
+Stl_heap.h:    __pop_heap_aux(first, last, value_type(first), comp);
+Stl_heap.h:  __make_heap(first, last, value_type(first), distance_type(first));
+Stl_heap.h:  __make_heap(first, last, comp, value_type(first), distance_type(first));
+Stl_iterator.h:  typedef T                  value_type;
+Stl_iterator.h:  typedef void                value_type;
+Stl_iterator.h:  typedef T                    value_type;
+Stl_iterator.h:  typedef T                          value_type;
+Stl_iterator.h:  typedef T                          value_type;
+Stl_iterator.h:  typedef T         value_type;
+Stl_iterator.h:  typedef typename Iterator::value_type        value_type;
+Stl_iterator.h:  typedef T                          value_type;
+Stl_iterator.h:  typedef T                          value_type;
+Stl_iterator.h:inline typename iterator_traits<Iterator>::value_type*
+Stl_iterator.h:value_type(const Iterator&) {
+Stl_iterator.h:  return static_cast<typename iterator_traits<Iterator>::value_type*>(0);
+Stl_iterator.h:inline T* value_type(const input_iterator<T, Distance>&) {
+Stl_iterator.h:inline T* value_type(const forward_iterator<T, Distance>&) {
+Stl_iterator.h:inline T* value_type(const bidirectional_iterator<T, Distance>&) {
+Stl_iterator.h:inline T* value_type(const random_access_iterator<T, Distance>&) {
+Stl_iterator.h:inline T* value_type(const T*) { return (T*)(0); }
+Stl_iterator.h:  typedef void                value_type;
+Stl_iterator.h:  operator=(const typename Container::value_type& value) { 
+Stl_iterator.h:  typedef void                value_type;
+Stl_iterator.h:  operator=(const typename Container::value_type& value) { 
+Stl_iterator.h:  typedef void                value_type;
+Stl_iterator.h:  operator=(const typename Container::value_type& value) { 
+Stl_iterator.h:  typedef T                          value_type;
+Stl_iterator.h:value_type(const reverse_bidirectional_iterator<BidirectionalIterator, T,
+Stl_iterator.h:  typedef typename iterator_traits<Iterator>::value_type
+Stl_iterator.h:          value_type;
+Stl_iterator.h:  typedef T                          value_type;
+Stl_iterator.h:inline T* value_type(const reverse_iterator<RandomAccessIterator, T,
+Stl_iterator.h:  typedef T                  value_type;
+Stl_iterator.h:inline T* value_type(const istream_iterator<T, Distance>&) { return (T*) 0; }
+Stl_iterator.h:  typedef void                value_type;
+Stl_list.h:  typedef T value_type;
+Stl_list.h:value_type(const __list_iterator<T, Ref, Ptr>&) {
+Stl_list.h:  typedef T value_type;
+Stl_list.h:  typedef value_type* pointer;
+Stl_list.h:  typedef const value_type* const_pointer;
+Stl_list.h:  typedef value_type& reference;
+Stl_list.h:  typedef const value_type& const_reference;
+Stl_list.h:  typedef reverse_bidirectional_iterator<const_iterator, value_type,
+Stl_list.h:  typedef reverse_bidirectional_iterator<iterator, value_type, reference,
+Stl_map.h:  typedef pair<const Key, T> value_type;
+Stl_map.h:    : public binary_function<value_type, value_type, bool> {
+Stl_map.h:    bool operator()(const value_type& x, const value_type& y) const {
+Stl_map.h:  typedef rb_tree<key_type, value_type, 
+Stl_map.h:                  select1st<value_type>, key_compare, Alloc> rep_type;
+Stl_map.h:  map(const value_type* first, const value_type* last)
+Stl_map.h:  map(const value_type* first, const value_type* last, const Compare& comp)
+Stl_map.h:    return (*((insert(value_type(k, T()))).first)).second;
+Stl_map.h:  pair<iterator,bool> insert(const value_type& x) { return t.insert_unique(x); }
+Stl_map.h:  iterator insert(iterator position, const value_type& x) {
+Stl_map.h:  void insert(const value_type* first, const value_type* last) {
+Stl_multimap.h:  typedef pair<const Key, T> value_type;
+Stl_multimap.h:  class value_compare : public binary_function<value_type, value_type, bool> {
+Stl_multimap.h:    bool operator()(const value_type& x, const value_type& y) const {
+Stl_multimap.h:  typedef rb_tree<key_type, value_type, 
+Stl_multimap.h:                  select1st<value_type>, key_compare, Alloc> rep_type;
+Stl_multimap.h:  multimap(const value_type* first, const value_type* last)
+Stl_multimap.h:  multimap(const value_type* first, const value_type* last,
+Stl_multimap.h:  iterator insert(const value_type& x) { return t.insert_equal(x); }
+Stl_multimap.h:  iterator insert(iterator position, const value_type& x) {
+Stl_multimap.h:  void insert(const value_type* first, const value_type* last) {
+Stl_multiset.h:  typedef Key value_type;
+Stl_multiset.h:  typedef rb_tree<key_type, value_type, 
+Stl_multiset.h:                  identity<value_type>, key_compare, Alloc> rep_type;
+Stl_multiset.h:  multiset(const value_type* first, const value_type* last)
+Stl_multiset.h:  multiset(const value_type* first, const value_type* last,
+Stl_multiset.h:  iterator insert(const value_type& x) { 
+Stl_multiset.h:  iterator insert(iterator position, const value_type& x) {
+Stl_multiset.h:  void insert(const value_type* first, const value_type* last) {
+Stl_numeric.h:  return __partial_sum(first, last, result, value_type(first));
+Stl_numeric.h:  return __partial_sum(first, last, result, value_type(first), binary_op);
+Stl_numeric.h:  return __adjacent_difference(first, last, result, value_type(first));
+Stl_numeric.h:  return __adjacent_difference(first, last, result, value_type(first),
+Stl_queue.h:  typedef typename Sequence::value_type value_type;
+Stl_queue.h:  void push(const value_type& x) { c.push_back(x); }
+Stl_queue.h:          class Compare = less<typename Sequence::value_type> >
+Stl_queue.h:  typedef typename Sequence::value_type value_type;
+Stl_queue.h:  priority_queue(const value_type* first, const value_type* last, 
+Stl_queue.h:  priority_queue(const value_type* first, const value_type* last) 
+Stl_queue.h:  void push(const value_type& x) {
+Stl_raw_storage_iter.h:  typedef void                value_type;
+Stl_rope.h:// This should  perhaps inherit from ostream<sequence::value_type>
+Stl_rope.h:// behave a little like basic_ostringstream<sequence::value_type> and a
+Stl_rope.h:         ,class v = typename sequence::value_type
+Stl_rope.h:	    typedef typename sequence::value_type value_type;
+Stl_rope.h:	    typedef v value_type;
+Stl_rope.h:	value_type buffer[buf_sz];
+Stl_rope.h:	void push_back(value_type x)
+Stl_rope.h:	void append(value_type *s, size_t len)
+Stl_rope.h:	sequence_buffer& write(value_type *s, size_t len)
+Stl_rope.h:	sequence_buffer& put(value_type x)
+Stl_rope.h:	sequence_buffer& operator=(const value_type& rhs)
+Stl_rope.h:	typedef charT value_type;
+Stl_rope.h:	typedef reverse_iterator<const_iterator, value_type, const_reference,
+Stl_rope.h:	// forward iterator with value_type charT.
+Stl_rope.h:	typedef reverse_iterator<iterator, value_type, reference,
+Stl_set.h:  typedef Key value_type;
+Stl_set.h:  typedef rb_tree<key_type, value_type, 
+Stl_set.h:                  identity<value_type>, key_compare, Alloc> rep_type;
+Stl_set.h:  set(const value_type* first, const value_type* last) 
+Stl_set.h:  set(const value_type* first, const value_type* last, const Compare& comp)
+Stl_set.h:  pair<iterator,bool> insert(const value_type& x) { 
+Stl_set.h:  iterator insert(iterator position, const value_type& x) {
+Stl_set.h:  void insert(const value_type* first, const value_type* last) {
+Stl_slist.h:  typedef T value_type;
+Stl_slist.h:value_type(const __slist_iterator<T, Ref, Ptr>&) {
+Stl_slist.h:  typedef T value_type;
+Stl_slist.h:  typedef value_type* pointer;
+Stl_slist.h:  typedef const value_type* const_pointer;
+Stl_slist.h:  typedef value_type& reference;
+Stl_slist.h:  typedef const value_type& const_reference;
+Stl_slist.h:  static list_node* create_node(const value_type& x) {
+Stl_slist.h:  void fill_initialize(size_type n, const value_type& x) {
+Stl_slist.h:  void range_initialize(const value_type* first, const value_type* last) {
+Stl_slist.h:  slist(size_type n, const value_type& x) { fill_initialize(n, x); }
+Stl_slist.h:  slist(int n, const value_type& x) { fill_initialize(n, x); }
+Stl_slist.h:  slist(long n, const value_type& x) { fill_initialize(n, x); }
+Stl_slist.h:  explicit slist(size_type n) { fill_initialize(n, value_type()); }
+Stl_slist.h:  slist(const value_type* first, const value_type* last) {
+Stl_slist.h:  void push_front(const value_type& x)   {
+Stl_slist.h:  list_node* _insert_after(list_node_base* pos, const value_type& x) {
+Stl_slist.h:                          size_type n, const value_type& x) {
+Stl_slist.h:                           const value_type* first, const value_type* last) {
+Stl_slist.h:  iterator insert_after(iterator pos, const value_type& x) {
+Stl_slist.h:    return insert_after(pos, value_type());
+Stl_slist.h:  void insert_after(iterator pos, size_type n, const value_type& x) {
+Stl_slist.h:  void insert_after(iterator pos, int n, const value_type& x) {
+Stl_slist.h:  void insert_after(iterator pos, long n, const value_type& x) {
+Stl_slist.h:                    const value_type* first, const value_type* last) {
+Stl_slist.h:  iterator insert(iterator pos, const value_type& x) {
+Stl_slist.h:                                  value_type()));
+Stl_slist.h:  void insert(iterator pos, size_type n, const value_type& x) {
+Stl_slist.h:  void insert(iterator pos, int n, const value_type& x) {
+Stl_slist.h:  void insert(iterator pos, long n, const value_type& x) {
+Stl_slist.h:  void insert(iterator pos, const value_type* first, const value_type* last) {
+Stl_stack.h:  typedef typename Sequence::value_type value_type;
+Stl_stack.h:  void push(const value_type& x) { c.push_back(x); }
+Stl_tempbuf.h:                  = iterator_traits<ForwardIterator>::value_type 
+Stl_tree.h:  typedef Value value_type;
+Stl_tree.h:inline Value* value_type(const __rb_tree_iterator<Value, Ref, Ptr>&) {
+Stl_tree.h:  typedef Value value_type;
+Stl_tree.h:  typedef value_type* pointer;
+Stl_tree.h:  typedef const value_type* const_pointer;
+Stl_tree.h:  typedef value_type& reference;
+Stl_tree.h:  typedef const value_type& const_reference;
+Stl_tree.h:  link_type create_node(const value_type& x) {
+Stl_tree.h:  typedef __rb_tree_iterator<value_type, reference, pointer> iterator;
+Stl_tree.h:  typedef __rb_tree_iterator<value_type, const_reference, const_pointer> 
+Stl_tree.h:  typedef reverse_bidirectional_iterator<iterator, value_type, reference,
+Stl_tree.h:  typedef reverse_bidirectional_iterator<const_iterator, value_type,
+Stl_tree.h:  iterator __insert(base_ptr x, base_ptr y, const value_type& v);
+Stl_tree.h:  pair<iterator,bool> insert_unique(const value_type& x);
+Stl_tree.h:  iterator insert_equal(const value_type& x);
+Stl_tree.h:  iterator insert_unique(iterator position, const value_type& x);
+Stl_tree.h:  iterator insert_equal(iterator position, const value_type& x);
+Stl_tree.h:  void insert_unique(const value_type* first, const value_type* last);
+Stl_tree.h:  void insert_equal(const value_type* first, const value_type* last);
+Stl_uninitialized.h:  return __uninitialized_copy(first, last, result, value_type(result));
+Stl_uninitialized.h:  __uninitialized_fill(first, last, x, value_type(first));
+Stl_uninitialized.h:  return __uninitialized_fill_n(first, n, x, value_type(first));
+Stl_vector.h:  typedef T value_type;
+Stl_vector.h:  typedef value_type* pointer;
+Stl_vector.h:  typedef const value_type* const_pointer;
+Stl_vector.h:  typedef value_type* iterator;
+Stl_vector.h:  typedef const value_type* const_iterator;
+Stl_vector.h:  typedef value_type& reference;
+Stl_vector.h:  typedef const value_type& const_reference;
+Stl_vector.h:  typedef reverse_iterator<const_iterator, value_type, const_reference, 
+Stl_vector.h:  typedef reverse_iterator<iterator, value_type, reference, difference_type>
+Stl_vector.h:  typedef simple_alloc<value_type, Alloc> data_allocator;
