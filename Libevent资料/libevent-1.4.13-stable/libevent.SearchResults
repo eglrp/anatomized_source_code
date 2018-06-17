@@ -1,0 +1,13 @@
+---- event_list Matches (13 in 5 files) ----
+Event-internal.h:	struct event_list **activequeues; //activequeues[priority]是一个链表，链表中的每个结点都是优先级为
+Event-internal.h:	struct event_list eventqueue;   //链表，保存了所有注册事件event的指针
+Event.c:	base->activequeues = (struct event_list **)    //活跃事件队列
+Event.c:	    calloc(base->nactivequeues, sizeof(struct event_list *));
+Event.c:		base->activequeues[i] = malloc(sizeof(struct event_list));
+Event.c:	struct event_list *activeq = NULL;
+Event.h:struct event_list;
+Event.h:TAILQ_HEAD (event_list, event);   //生成event类型的head节点，链表名为event_list
+Evsignal.h:	struct event_list evsigevents[NSIG];   //数组，evsigevent[signo]表示注册到信号signo的事件链表
+Kqueue.c:	struct event_list evsigevents[NSIG];
+Kqueue.c:			struct event_list *head =
+Kqueue.c:			    (struct event_list *)events[i].udata;
